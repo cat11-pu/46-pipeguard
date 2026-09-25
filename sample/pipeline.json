@@ -1,0 +1,15 @@
+{
+  "too_large_code": "E_TOO_LARGE",
+  "resumable": true,
+  "buffer_limit": 3,
+  "crash_after": 3,
+  "state": {"watermark": 2, "buffer": 0, "retries": 1},
+  "items": [
+    {"id": "i0", "size": 1, "value": 10},
+    {"id": "i1", "size": 1, "value": 20},
+    {"id": "i2", "size": 2, "value": 30},
+    {"id": "i3", "size": 1, "value": 40},
+    {"id": "i4", "size": 1, "value": 50},
+    {"id": "i5", "size": 2, "value": 60}
+  ]
+}
