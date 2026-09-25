@@ -14,12 +14,12 @@ const rest = resume(started, spec.items, spec);
 const result = run(spec.items, spec);
 const view = render(spec);
 
-emit("已处理的条 =", JSON.stringify(result.processed));
+emit("已处理的条 =", result.processed);
 emit("水位 =", result.watermark);
 emit("缓冲峰值 =", result.buffer_peak);
 emit("重试次数 =", result.retries);
 emit("恢复起点 =", rest.watermark);
-emit("重启后重放的条 =", JSON.stringify(rest.processed));
+emit("重启后重放的条 =", rest.processed);
 emit("能不能续跑 =", spec.resumable);
 emit("单条超过缓冲上限的错误码 =", spec.too_large_code);
 
