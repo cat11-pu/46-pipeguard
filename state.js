@@ -1,8 +1,13 @@
-// state.js：进度状态（基线：不落盘、恢复从零开始）
+// state.js：进度状态的落盘与恢复
 export function initial() {
   return { watermark: 0, buffer: 0, retries: 0 };
 }
 
 export function restore(state, options) {
-  return { watermark: 0, buffer: 0, retries: 0 };
+  const saved = state || {};
+  return {
+    watermark: saved.watermark || 0,
+    buffer: saved.buffer || 0,
+    retries: saved.retries || 0
+  };
 }
